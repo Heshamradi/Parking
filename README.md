@@ -1,32 +1,74 @@
-# Parking :: Parking Finder
+# Parking :: Parking Finder in flutter 
 
 
-# Steup
-Run the following commands from your terminal:
+## Steup
+ex Git :
+run this commanda
+~~~
+run pub get 
+~~~
 
-1-git clone to https://github.com/Heshamradi/Parking.git clone this repository
 
-2-flutter pub get in the project root directory to install all the required dependencies.
+## ScreenShots :
+### Registration
 
-# ScreenShots 
-![Screenshot_1685964549](https://github.com/Heshamradi/Parking/assets/90778150/f5b7a611-0577-49b6-8381-17c38b719b95)
-![Screenshot_1685964545](https://github.com/Heshamradi/Parking/assets/90778150/028d968b-44d4-49ed-89c5-9c9eddec49d2)
-![Screenshot_1685967040](https://github.com/Heshamradi/Parking/assets/90778150/302b102b-efa0-4a79-9874-3d0e50345ae2)
-![Screenshot_1685964666](https://github.com/Heshamradi/Parking/assets/90778150/70a7454a-d811-47f7-9d88-c4b29e7a615d)
-![Screenshot_1685964685](https://github.com/Heshamradi/Parking/assets/90778150/5d75135e-1b71-4feb-9462-2f85f09f0332)
-![Screenshot_1685966742](https://github.com/Heshamradi/Parking/assets/90778150/c5063896-fa29-400d-8b30-a73bbc351546)
-![Screenshot_1685967101](https://github.com/Heshamradi/Parking/assets/90778150/1047128b-fceb-4d31-a838-3d9a094f45f8)
-![Screenshot_1685966754](https://github.com/Heshamradi/Parking/assets/90778150/ae7d2467-fffd-4f97-95ed-fb57b23342dc)
-![Screenshot_1685964767](https://github.com/Heshamradi/Parking/assets/90778150/ff789a60-06e4-4b53-a884-1975a6ac7f4d)
-![Screenshot_1685964774](https://github.com/Heshamradi/Parking/assets/90778150/8614499e-299d-481d-9c8b-8f8a9fdb6779)
-![Screenshot_1685964794](https://github.com/Heshamradi/Parking/assets/90778150/fa6db208-773c-4b51-90ed-faa436fb4519)
-![Screenshot_1685964806](https://github.com/Heshamradi/Parking/assets/90778150/4bcb273e-b37c-45c1-812d-3b8491176195)
-![Screenshot_1685964850](https://github.com/Heshamradi/Parking/assets/90778150/16a11df3-8fc2-43e1-ba6b-b243db3b4002)
-![Screenshot_1685964951](https://github.com/Heshamradi/Parking/assets/90778150/a8b52b2e-3f73-4a26-8d94-ad334abb84c2)
-![Screenshot_1685967447](https://github.com/Heshamradi/Parking/assets/90778150/555393b8-48d9-4c7f-bd28-9c249b8d1745)
-![Screenshot_1685966646](https://github.com/Heshamradi/Parking/assets/90778150/73ec8a96-d48f-4620-b435-a344a631228b)
-![Screenshot_1685966658](https://github.com/Heshamradi/Parking/assets/90778150/4cab3c2a-4915-421c-a06b-95832765ea1d)
-![Screenshot_1685966665](https://github.com/Heshamradi/Parking/assets/90778150/43d03d2c-15b6-4965-96ac-9e9c1fedc1e7)
-![Screenshot_1685966712](https://github.com/Heshamradi/Parking/assets/90778150/ffd197a5-6c49-4370-a001-34b9afeb9290)
-![Screenshot_1685967517](https://github.com/Heshamradi/Parking/assets/90778150/93b47e74-f8b7-49b1-8295-e28d59e010a8)
+
+ <img src="https://github.com/Heshamradi/Parking/assets/90778150/f5b7a611-0577-49b6-8381-17c38b719b95.png" width="200"  >
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/8ac34c2e-fd6d-4b59-99c4-23dd6a6ccd20.png" width="200"  >
+	 <img src="https://github.com/Heshamradi/Parking/assets/90778150/faac270b-3261-4897-b800-b3c4f58ea16f.png" width="200"  >
+	
+	
+		
+### Home & drawer :
+		
+		
+	  
+ <img src="https://github.com/Heshamradi/Parking/assets/90778150/794d01a8-f5c9-4424-a242-cbd1cc4d2f05.png" width="200"  >
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/4dcbcce3-2092-42e6-afee-bac49c56a70a.png" width="200"  >
+    	
+	
+### Spots
+
+				
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/4eabf6d0-62b5-49bf-ad72-9bc8648a9d1c.png" width="200"  >
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/ad97631c-6aad-4411-b5cd-d40d33966fbd.png" width="200"  >
+	<img src="https://github.com/Heshamradi/Parking/assets/90778150/b00ab66a-1658-46d8-94b0-278b2f6f96d7.png" width="200"  >
+	<img src="https://github.com/Heshamradi/Parking/assets/90778150/1839ca95-2897-4406-8744-d32522d9b10e.png" width="200"  >
+	<img src="https://github.com/Heshamradi/Parking/assets/90778150/111c545a-f22a-4eda-9cc4-121e6d94a2d9.png" width="200"  >
+				
+		
+			
+			
+### Payment ::
+
+			
+<img src="https://github.com/Heshamradi/Parking/assets/90778150/59b6e8db-cd9d-4c45-8e4f-2d1d6156c9f1.png" width="200"  >
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/626ac693-0812-4f44-9f3d-48a57e7c8fcb.png" width="200"  >
+	<img src="https://github.com/Heshamradi/Parking/assets/90778150/af1411f9-5649-4a9b-9058-f5f361f46e9a.png" width="200"  >
+	<img src="https://github.com/Heshamradi/Parking/assets/90778150/bcb968fb-8b78-4d60-85aa-80041d6a52e7.png" width="200"  >
+	<img src="https://github.com/Heshamradi/Parking/assets/90778150/ab84a1d8-bf38-427e-96a3-92f7cca29840.png" width="200"  >
+				
+
+### QR & Feedback ::
+
+
+ <img src="https://github.com/Heshamradi/Parking/assets/90778150/c52cc605-1efe-4192-bfb2-9704bb58bffa.png" width="200"  >
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/7eb9d028-7678-447b-8897-651c8ddcde2c.png" width="200"  >
+	<img src="https://github.com/Heshamradi/Parking/assets/90778150/f2d580b7-9abc-4315-91bc-15b81ba823e0.png" width="200"  >
+	
+	
+	### Booking :: 
+ <img src="https://github.com/Heshamradi/Parking/assets/90778150/efe440e4-9d79-4f5b-a03a-f6438f43b0ba.png" width="200"  >
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/4875746d-0562-4550-a43c-993eed4a3b13.png" width="200"  >
+	
+			
+			
+			
+
+
+
+			
+
+
+
 
