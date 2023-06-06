@@ -7,7 +7,11 @@ run this commanda
 ~~~
 run pub get 
 ~~~
-
+## Using ::
+- dart
+- Flutter Widget
+- State Management (Bloc & Cubit)
+- Firebase & Cloud FireStore
 
 ## ScreenShots :
 ### Registration
