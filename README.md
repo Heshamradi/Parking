@@ -3,7 +3,7 @@
 
 ## Steup
 ex Git :
-run this commanda
+run this commanda in Terminal
 ~~~
 run pub get 
 ~~~
