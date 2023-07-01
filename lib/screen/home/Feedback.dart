@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
 
@@ -23,9 +26,29 @@ class _FeedbackDialogState extends State<FeedbackDialog> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade300,
+      backgroundColor: Colors.grey.shade50,
       appBar: AppBar(
-        title: const Text("Your Feedback"),
+        leading: IconButton(
+          icon: Icon(CupertinoIcons.back),
+          onPressed: (){
+            Navigator.pop(context);
+          },
+        ),
+        systemOverlayStyle: SystemUiOverlayStyle(
+          systemNavigationBarColor: Colors.white,
+          systemNavigationBarIconBrightness: Brightness.dark,
+          statusBarColor: Colors.grey.shade50,
+        ),
+        iconTheme: IconThemeData(
+          size: 30,
+          color: Colors.deepPurple,
+        ),
+        elevation: 0,
+        backgroundColor: Colors.grey.shade50,
+        title:  Text("Feedback",style: GoogleFonts.ubuntu(
+          fontWeight: FontWeight.bold,
+          color: Colors.deepPurple.shade600,
+        ),),
       ),
       body: AlertDialog(
         content: Form(

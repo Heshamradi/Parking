@@ -1,4 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 // ignore: unused_import
 import 'dart:ui' as ui;
@@ -45,7 +48,27 @@ class _GetPolyState extends State<GetPoly> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Map"),
+        leading: IconButton(
+          icon: Icon(CupertinoIcons.back),
+          onPressed: (){
+            Navigator.pop(context);
+          },
+        ),
+        systemOverlayStyle: SystemUiOverlayStyle(
+          systemNavigationBarColor: Colors.white,
+          systemNavigationBarIconBrightness: Brightness.dark,
+          statusBarColor: Colors.white,
+        ),
+        iconTheme: IconThemeData(
+          size: 30,
+          color: Colors.deepPurple,
+        ),
+        elevation: 0,
+        backgroundColor: Colors.white,
+        title:  Text("Map",style: GoogleFonts.ubuntu(
+          fontWeight: FontWeight.bold,
+          color: Colors.deepPurple.shade600,
+        ),),
       ),
       body: GoogleMap(
         initialCameraPosition: const CameraPosition(

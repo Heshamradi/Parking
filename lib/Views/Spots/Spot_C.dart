@@ -1,5 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:parking_app/shared/button.dart';
 
 
@@ -33,8 +36,29 @@ class _Spot_CState extends State<Spot_C> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text("Spot C"),
+        leading: IconButton(
+          icon: Icon(CupertinoIcons.back),
+          onPressed: (){
+            Navigator.pop(context);
+          },
+        ),
+        systemOverlayStyle: SystemUiOverlayStyle(
+          systemNavigationBarColor: Colors.white,
+          systemNavigationBarIconBrightness: Brightness.dark,
+          statusBarColor: Colors.white,
+        ),
+        iconTheme: IconThemeData(
+          size: 30,
+          color: Colors.deepPurple,
+        ),
+        elevation: 0,
+        backgroundColor: Colors.white,
+        title:  Text("Spot C",style: GoogleFonts.ubuntu(
+          fontWeight: FontWeight.bold,
+          color: Colors.deepPurple.shade600,
+        ),),
       ),
       body: Container(
         padding: const EdgeInsets.all(10),

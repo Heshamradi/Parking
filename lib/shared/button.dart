@@ -124,7 +124,7 @@ class MyButton extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: Colors.purple,
+          color: Colors.deepPurple,
         ),
         child: Center(
           child: Text(

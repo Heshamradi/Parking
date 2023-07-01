@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:parking_app/Booking/Book_spot.dart';
 // ignore: prefer_typing_uninitialized_variables
 var timerightnows;
@@ -71,13 +74,18 @@ class _BoxPageState extends State<BoxPage> {
     return _boxes;
   }
 
+
+  List names =[];
   void _onBoxSelected(bool selected, int index) {
     setState(() {
       if (selected) {
         _selectedCount++;
         hours++;
+        names.add(_boxes[index].timeSlot);
+        print(names);
       } else {
         _selectedCount--;
+        names.remove(_boxes[index].timeSlot);
       }
       _boxes[index].isSelected = selected;
       if (selected == false) {
@@ -101,7 +109,6 @@ class _BoxPageState extends State<BoxPage> {
       }
     });
   }
-
   void saveSelectedBoxes() async {
     final spotsRef = FirebaseFirestore.instance.collection(widget.locationspot);
     final doc = spotsRef.doc(widget.spot);
@@ -111,12 +118,32 @@ class _BoxPageState extends State<BoxPage> {
     }
     await doc.update(data);
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text('Select Time Slots'),
+        leading: IconButton(
+          icon: Icon(CupertinoIcons.back),
+          onPressed: (){
+            Navigator.pop(context);
+          },
+        ),
+        systemOverlayStyle: SystemUiOverlayStyle(
+          systemNavigationBarColor: Colors.white,
+          systemNavigationBarIconBrightness: Brightness.dark,
+          statusBarColor: Colors.white,
+        ),
+        iconTheme: IconThemeData(
+          size: 30,
+          color: Colors.deepPurple,
+        ),
+        elevation: 0,
+        backgroundColor: Colors.white,
+        title:  Text("Select Time Slots",style: GoogleFonts.ubuntu(
+          fontWeight: FontWeight.bold,
+          color: Colors.deepPurple.shade600,
+        ),),
       ),
       body: FutureBuilder<List<Box>>(
         future: _fetchSpotData(),
@@ -167,7 +194,7 @@ class _BoxPageState extends State<BoxPage> {
         onPressed: () {
         saveSelectedBoxes();
           if(hours!=0){
-            Navigator.push(context,MaterialPageRoute(builder: ((context) =>BooKSpot(time: hours,spotname: widget.spot,funct: saveSelectedBoxes,))));
+            Navigator.push(context,MaterialPageRoute(builder: ((context) =>BooKSpot(time: hours,spotname: widget.spot,funct: saveSelectedBoxes,list: names,location: widget.locationspot,))));
           }
         },
         backgroundColor: _selectedCount > 0 ? Colors.green : Colors.grey,

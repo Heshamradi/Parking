@@ -88,6 +88,7 @@ class _SignUpState extends State<SignUp> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Register"),
+        backgroundColor: Colors.deepPurple,
       ),
       backgroundColor: const Color(0xffe8ebed),
       body: SingleChildScrollView(

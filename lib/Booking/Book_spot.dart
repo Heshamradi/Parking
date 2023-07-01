@@ -1,28 +1,38 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, await_only_futures, use_build_context_synchronously, avoid_single_cascade_in_expression_statements, duplicate_ignore
 
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:parking_app/Gates/gates_screen.dart';
 import 'package:parking_app/pay/modules/screens/register_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+
 
 
 String Time = DateFormat("yyyy-MM-dd HH:mm:ss").format(DateTime.now());
 
 // ignore: must_be_immutable
 class BooKSpot extends StatefulWidget {
-   GlobalKey<FormState> formstate =  GlobalKey<FormState>();
+
+
+  GlobalKey<FormState> formstate =  GlobalKey<FormState>();
   // String Time =DateFormat("yyyy-MM-dd HH:mm:ss").format(DateTime.now());
-  String? spotname;
+  final spotname;
   VoidCallback? funct;
-  double? time;
-  List<String>? spot;
-  BooKSpot({super.key, 
+  final time;
+  final spot;
+  final location;
+  final List? list;
+
+  BooKSpot({super.key,
     this.funct,
     this.time,
     this.spot,
     this.spotname,
+    this.list,
+    this.location,
   });
   @override
   State<BooKSpot> createState() => _BooKSpotState();
@@ -40,6 +50,7 @@ double? hour;
 bool? v;
 //Color? n = a.colorofspot;
 
+
 class _BooKSpotState extends State<BooKSpot> {
   GlobalKey<FormState> formstate = GlobalKey<FormState>();
 
@@ -50,6 +61,17 @@ class _BooKSpotState extends State<BooKSpot> {
         create: (context) => TotalPrice(),
         child: Scaffold(
           appBar: AppBar(
+            leading: IconButton(
+              icon: Icon(CupertinoIcons.back),
+              onPressed: () {
+                Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>GatesScreen()));
+                for(int i =0 ; i < widget.list!.length;i++) {
+                  FirebaseFirestore.instance.collection(widget.location).doc(widget.spotname).update(
+                      {'${widget.list![i]}': false});
+                }
+                widget.list?.clear();
+              }
+            ),
             title: const Text("Book Your Spot"),
             // leading: IconButton(
             //     onPressed: () {}, icon: const Icon(Icons.arrow_back)),
