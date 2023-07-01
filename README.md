@@ -5,7 +5,8 @@
 ex Git :
 run this commanda in Terminal
 ~~~
-run pub get 
+flutter clean
+flutter pub get 
 ~~~
 ## Using ::
 - dart
@@ -17,30 +18,50 @@ run pub get
 ### Registration
 
 
- <img src="https://github.com/Heshamradi/Parking/assets/90778150/f5b7a611-0577-49b6-8381-17c38b719b95.png" width="200"  >
-  <img src="https://github.com/Heshamradi/Parking/assets/90778150/8ac34c2e-fd6d-4b59-99c4-23dd6a6ccd20.png" width="200"  >
-	 <img src="https://github.com/Heshamradi/Parking/assets/90778150/faac270b-3261-4897-b800-b3c4f58ea16f.png" width="200"  >
+ <img src="https://github.com/Heshamradi/Parking/assets/90778150/98733fce-b7e2-423b-934d-d9ec8a42814f.png" width="200"  >
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/fc1d7d8a-8b02-47f8-9237-0a3fb868a84a.png" width="200"  >
+	 <img src="https://github.com/Heshamradi/Parking/assets/90778150/770bbef7-3015-40ec-9f11-6d5816a4004c.png" width="200"  >
 	
+
+
+
 	
 		
 ### Home & drawer :
 		
 		
 	  
- <img src="https://github.com/Heshamradi/Parking/assets/90778150/794d01a8-f5c9-4424-a242-cbd1cc4d2f05.png" width="200"  >
-  <img src="https://github.com/Heshamradi/Parking/assets/90778150/4dcbcce3-2092-42e6-afee-bac49c56a70a.png" width="200"  >
+ <img src="https://github.com/Heshamradi/Parking/assets/90778150/df21e4e3-7cde-46d1-926f-27829ad91dc8.png" width="200"  >
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/ae31599e-6f9d-453c-bf7d-9e8f7351acbf.png" width="200"  >
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/a2927ddb-83e7-451e-a0c7-373ef5a4f043.png" width="200"  >
     	
+
+
 	
 ### Spots
 
 				
-  <img src="https://github.com/Heshamradi/Parking/assets/90778150/4eabf6d0-62b5-49bf-ad72-9bc8648a9d1c.png" width="200"  >
-  <img src="https://github.com/Heshamradi/Parking/assets/90778150/ad97631c-6aad-4411-b5cd-d40d33966fbd.png" width="200"  >
-	<img src="https://github.com/Heshamradi/Parking/assets/90778150/b00ab66a-1658-46d8-94b0-278b2f6f96d7.png" width="200"  >
-	<img src="https://github.com/Heshamradi/Parking/assets/90778150/1839ca95-2897-4406-8744-d32522d9b10e.png" width="200"  >
-	<img src="https://github.com/Heshamradi/Parking/assets/90778150/111c545a-f22a-4eda-9cc4-121e6d94a2d9.png" width="200"  >
-				
-		
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/f60e1a4d-fca8-4895-8e12-a5aec56d075a.png" width="200"  >
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/82e6128a-f4a0-4d93-9cc4-2276b18e9a3b.png" width="200"  >
+	<img src="https://github.com/Heshamradi/Parking/assets/90778150/82e6128a-f4a0-4d93-9cc4-2276b18e9a3b.png" width="200"  >
+	<img src="https://github.com/Heshamradi/Parking/assets/90778150/7ddcc1fd-fbb4-46bc-8bb8-33294d18a071.png" width="200"  >
+	
+
+
+
+  
+### Booking
+<img src="https://github.com/Heshamradi/Parking/assets/90778150/4dd79732-6d28-467a-903d-8faf6f411d04.png" width="200"  >
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/eb40eb9b-cf68-4713-bc71-0840870dea81.png" width="200"  >
+       <img src="https://github.com/Heshamradi/Parking/assets/90778150/95e9778b-b5a4-47c0-8790-b3269c12ea57.png" width="200"  >
+	   <img src="https://github.com/Heshamradi/Parking/assets/90778150/b5c8b167-0d99-48f3-93c4-8c7c4617d117.png" width="200"  >
+	
+ 
+
+
+
+
+
 			
 			
 ### Payment ::
@@ -57,17 +78,18 @@ run pub get
 
 
  <img src="https://github.com/Heshamradi/Parking/assets/90778150/c52cc605-1efe-4192-bfb2-9704bb58bffa.png" width="200"  >
-  <img src="https://github.com/Heshamradi/Parking/assets/90778150/7eb9d028-7678-447b-8897-651c8ddcde2c.png" width="200"  >
-	<img src="https://github.com/Heshamradi/Parking/assets/90778150/f2d580b7-9abc-4315-91bc-15b81ba823e0.png" width="200"  >
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/212afd25-0004-478d-9d22-58305575d235.png" width="200"  >
+	<img src="https://github.com/Heshamradi/Parking/assets/90778150/53e84618-7a08-4653-9564-dcd98b9db693.png" width="200"  >
 	
 	
-	### Booking :: 
- <img src="https://github.com/Heshamradi/Parking/assets/90778150/efe440e4-9d79-4f5b-a03a-f6438f43b0ba.png" width="200"  >
-  <img src="https://github.com/Heshamradi/Parking/assets/90778150/4875746d-0562-4550-a43c-993eed4a3b13.png" width="200"  >
+
+	
   
 ### History 
- <img src="https://github.com/Heshamradi/Parking/assets/90778150/f787541d-9631-47b1-ab81-e02fc6d04fb6.png" width="200"  >
-  <img src="https://github.com/Heshamradi/Parking/assets/90778150/af92b6f6-39af-45df-9d49-865531b52d1d.png" width="200"  >
+ <img src="https://github.com/Heshamradi/Parking/assets/90778150/5ad63521-a061-4cd8-9dea-cbbc6c4d8887.png" width="200"  >
+  <img src="https://github.com/Heshamradi/Parking/assets/90778150/83d1556d-ca1d-478a-b636-3469f7375d9f.png" width="200"  >
+
+
 
 
 	
