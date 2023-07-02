@@ -15,10 +15,10 @@ class GetPoly extends StatefulWidget {
 
 class _GetPolyState extends State<GetPoly> {
   final List<LatLng> polylineCoordinates = [
-    const LatLng(29.97273276094186, 30.94393928057071),
+    //const LatLng(29.97273276094186, 30.94393928057071),
     const LatLng(29.99622022746595, 30.965874710576287),
     const LatLng(29.971319828339507, 31.019479967079004),
-    const LatLng(30.055581627204386, 31.233901438246356),
+    //const LatLng(30.055581627204386, 31.233901438246356),
     const LatLng(30.04998774568307, 30.976864510670765),
     // LatLng(37.774966, -122.417509),
     // LatLng(37.774996, -122.417061),
@@ -34,7 +34,7 @@ class _GetPolyState extends State<GetPoly> {
   }
 
   void addCustomIcon() {
-    BitmapDescriptor.fromAssetImage(const ImageConfiguration(), "images/images 3.png")
+    BitmapDescriptor.fromAssetImage(const ImageConfiguration(), "images/images9.png")
         .then(
       (icon) {
         setState(() {
@@ -81,25 +81,25 @@ class _GetPolyState extends State<GetPoly> {
           Marker(
               markerId: const MarkerId('marker_1'),
               position: const LatLng(29.99622022746595, 30.965874710576287),
-              infoWindow: const InfoWindow(title: "Mall Of Arabia Parking")),
+              infoWindow: const InfoWindow(title: "Must")),
           const Marker(
               markerId: MarkerId("mark2"),
               position: LatLng(30.04998774568307, 30.976864510670765),
-              infoWindow: InfoWindow(title: "Mall of Arabia Parking")),
-          Marker(
-              markerId: const MarkerId("mark3"),
-              position: const LatLng(29.97273276094186, 30.94393928057071),
-              infoWindow: const InfoWindow(title: "AL Hosry Parking "),
-              icon: markerIcon),
-          const Marker(
-              markerId: MarkerId("mark4"),
-              position: LatLng(30.055581627204386, 31.233901438246356),
-              infoWindow: InfoWindow(title: "Zayed Parking ")),
+              infoWindow: InfoWindow(title: "Zayed")),
+          // Marker(
+          //     markerId: const MarkerId("mark3"),
+          //     position: const LatLng(29.97273276094186, 30.94393928057071),
+          //     infoWindow: const InfoWindow(title: "AL Hosry Parking "),
+          //     icon: markerIcon),
+          // const Marker(
+          //     markerId: MarkerId("mark4"),
+          //     position: LatLng(30.055581627204386, 31.233901438246356),
+          //     infoWindow: InfoWindow(title: "Zayed Parking ")),
         },
         polylines: <Polyline>{
           Polyline(
             polylineId: const PolylineId('polyline_1'),
-            color: Colors.red,
+            color: Colors.deepPurple,
             width: 6,
             points: polylineCoordinates,
           ),

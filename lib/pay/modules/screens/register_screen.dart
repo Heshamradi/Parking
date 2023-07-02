@@ -29,6 +29,7 @@ class RegisterScreen extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             title: const Text("Payment Integration"),
+            backgroundColor: Colors.purple,
           ),
           body: BlocConsumer<PaymentCubitCubit, PaymentCubitState>(
               listener: (BuildContext context, Object? state) {

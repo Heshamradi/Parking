@@ -91,7 +91,7 @@ class _BooKSpotState extends State<BooKSpot> {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 15, vertical: 5),
                       decoration: BoxDecoration(
-                        color: Colors.purple,
+                        color: Colors.deepPurple,
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow(
